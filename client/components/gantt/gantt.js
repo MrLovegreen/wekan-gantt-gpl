@@ -165,7 +165,7 @@ BlazeComponent.extendComponent({
     this.autorun(() => {
       const events = [];
       // https://github.com/wekan/wekan/issues/2870#issuecomment-857171127 part 4
-      const LinksDate = [];
+      const LinksData = []; // renamed from LinksDate to LinksData. https://github.com/wekan/wekan-gantt-gpl/issues/4#issuecomment-895003141
       currentBoard.cards().forEach(c => {
         if (!c.startAt || !c.endAt) {
           return;
